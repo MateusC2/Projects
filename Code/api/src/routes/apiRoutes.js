@@ -8,4 +8,11 @@ router.put('/user', UserController.updateUser);
 router.delete('/user/:id', UserController.deleteUser);
 router.get('/user', UserController.getAllUsers);
 
+const reservaController = require("../controllers/reservaController");
+router.post('/reserva', reservaController.createReserva);
+router.put("/reserva/:id", reservaController.updateReserva);
+router.delete('/reserva/:id', reservaController.deleteReserva);
+router.get('/reserva', reservaController.getAllReserva);
+
+
 module.exports = router
